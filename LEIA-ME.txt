@@ -1,0 +1,15 @@
+PALPITES DE FUTEBOL COM IA (dados: Sofascore | IA: NVIDIA)
+
+REQUISITOS: Node.js 18 ou mais novo (nodejs.org)
+
+COMO USAR
+1. Extraia o zip numa pasta.
+2. Windows: dê dois cliques em iniciar.bat e cole sua chave NVIDIA quando pedir.
+   Mac/Linux: no terminal, rode ./iniciar.sh
+3. Abra http://localhost:3000
+
+OBSERVAÇÕES
+- A chave NVIDIA fica só no servidor (não vai para o navegador). Nunca a coloque no app.js.
+- A API do Sofascore não é oficial: pode bloquear (erro 403) ou mudar. Use para fins pessoais.
+- Cada partida aberta faz cerca de 12 chamadas ao Sofascore; os resultados ficam em cache.
+- Para trocar o modelo da IA: variável NVIDIA_MODEL (padrão meta/llama-3.1-70b-instruct).

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Palpites de Futebol com IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>⚽ Palpites com IA</h1>
+    <div class="datebox">
+      <button id="prev">‹</button>
+      <input type="date" id="date">
+      <button id="next">›</button>
+    </div>
+  </header>
+
+  <main>
+    <aside id="sidebar">
+      <input type="search" id="filter" placeholder="Filtrar time ou liga...">
+      <div id="leagues"><p class="muted">Carregando jogos...</p></div>
+    </aside>
+
+    <section id="detail">
+      <div class="empty">Selecione uma partida à esquerda para ver os palpites.</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
